@@ -9,4 +9,5 @@ HEALTHCHECK CMD sh ./docker-healthcheck
 
 # Add your elasticsearch plugins setup here
 # Example: RUN elasticsearch-plugin install analysis-icu
+RUN elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.3.2/elasticsearch-analysis-ik-7.3.2.zip
 RUN elasticsearch-plugin install --batch repository-s3
